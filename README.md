@@ -1,38 +1,37 @@
-# AWSOM
-# Pich de demo!
+# ## PROJECT AWSOM - A SPACE WEATHER AND SUN ORACLE
 
-Presentación (2 segundos)
+Hi! I'm your first Markdown file in **StackEdit**. If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. Once you have finished with me, you can create new files by opening the **file explorer** on the left corner of the navigation bar.
 
-
-## **¿Qué inspiró a su equipo a elegir este desafío? **
-
-En un mundo donde la **tecnología es esencial**, imaginamos un escenario de desconexión total: sin GPS, sin internet y con problemas graves en la infraestructura eléctrica.
-
-## NOMBRE DE SU SOLUCIÓN: proporcionen un título y un eslogan para su proyecto para llamar la atención de la audiencia**
-
-**¿Qué problema soluciona?**
-
-AWSOM se enfoca en la protección crítica de nuestras redes eléctricas y sistemas tecnológicos ante amenazas espaciales invisibles, como las tormentas geomagnéticas. Nuestra solución radica en la automatización del apagado anticipado, asegurando la continuidad de nuestras vidas en un mundo cada vez más conectado y dependiente de la tecnología.
-
-**¿Qué ganancia tendría la gente? ¿Dónde está la oportunidad?**
-
-Nuestra misión es proteger la infraestructura tecnológica vital en un mundo conectado. Evitamos desastres anticipando tormentas geomagnéticas y colaborando con empresas eléctricas. La oportunidad radica en ser líderes en la gestión de eventos espaciales y asegurar un futuro tecnológico ininterrumpido.
+### HIGH-LEVEL SUMMARY
+Could we image the life without our Electrical and Electronics systems? So, what if a most powerful and natural force is able to destroy the life as we know now? We are talking about Space Weather and Geomagnetic storms, but, can we stop that ? We can be protected and just with magnetosphere, but not all. For that, our mission in AWSOM is to provide ways to preserve the infrastructure that supports our interconnected world, calculating from the raw data provided from DSCOVR to generated alerts. The data we use are magnetic camp and plasma solar . We use the correlation compare with attributes to find the relationship with the data and geomagnetic storms. Finally, we use that processed data for build real time alerts and automatized IOT actuators ables to turn off Electrical and Electronics systems.
 
 
-## **DESCRIPCIÓN DE LA IDEA**
+### HIGH-LEVEL SUMMARY
+Could we image the life without our Electrical and Electronics systems? So, what if a most powerful and natural force is able to destroy the life as we know now? We are talking about Space Weather and Geomagnetic storms, but, can we stop that ? We can be protected and just with magnetosphere, but not all. For that, our mission in AWSOM is to provide ways to preserve the infrastructure that supports our interconnected world, calculating from the raw data provided from DSCOVR to generated alerts. The data we use are magnetic camp and plasma solar . We use the correlation compare with attributes to find the relationship with the data and geomagnetic storms. Finally, we use that processed data for build real time alerts and automatized IOT actuators ables to turn off Electrical and Electronics systems.
 
-**¿Cómo funciona? Muestren imágenes o un prototipo (de manera opcional, puede compartir pantalla).** 
-Sistema de apagado de un aparato a través a de G cloud
+### PROJECT DEMO
+[https://youtu.be/h-mPILoSbjM](https://youtu.be/h-mPILoSbjM)
+### FINAL PROJECT
 
-## **MIRADA AL FUTURO**
+[https://github.com/miguel-rios-r/AWSOM](https://github.com/miguel-rios-r/AWSOM)
 
+### PROJECT DETAILS
 
-**¿Qué cambiará su idea?**
+Could we image the life without our Electrical and Electronics systems? So, what if a most powerful and natural force is able to destroy the life as we know now?
+We are talking about Space Weather and Geomagnetic storms, but, can we stop that ? We can be protected and just with magnetosphere, but not all.
 
-La asociación con centrales eléctricas podría presentarse como una oportunidad estratégica para las empresas eléctricas para garantizar la continuidad del suministro eléctrico y proteger sus activos ante eventos espaciales impredecibles.
+For that, our mission in AWSOM is to provide ways to preserve the infrastructure that supports our interconnected world, calculating from the raw data provided from DSCOVR to generated alerts. The data we use are magnetic camp and plasma solar . We use the correlation compare with attributes to find the relationship with the data and geomagnetic storms.(Python, Panda)
 
-Cautiven a su audiencia con lo que podría ser su proyecto.
+Finally, we use that processed data for build real time alerts and automatized IOT actuators ables to turn off Electrical and Electronics systems. For the automated IOT turn off system demo we use a ESP32 board, writing the firmware on C lang and use a MQTT network for communicated it with our Python system.
 
-**La solución, ¿qué puede hacer por la gente, el mundo o más?**
+### USE OF ARTIFICIAL INTELLIGENCE
 
-En resumen, nuestra solución garantiza servicios esenciales y protege la seguridad, la economía y la infraestructura crítica. Además, marcamos un hito global en la gestión de eventos climáticos espaciales. Estamos forjando un futuro más seguro y conectado. ¡Gracias por unirse a nuestra visión!
+We use Tensor Flow and Google Colab for the data pre-analysis
+
+### SPACE AGENCY DATA
+
+-   [https://services.swpc.noaa.gov/products/solar-wind/](https://services.swpc.noaa.gov/products/solar-wind/)
+
+### REFERENCES
+
+-   [https://www.swpc.noaa.gov/](https://www.swpc.noaa.gov/)
