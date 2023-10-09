@@ -2,12 +2,12 @@
 #include <WiFi.h>
 #include <PubSubClient.h>
 
-const char* ssid = "MIMSLAB_STUDIO";
-const char* password = "MimsLAAB";
-const char* mqtt_server = "34.41.169.80"; // O URL del servidor MQTT
-const char* mqtt_user = "awsom-user";
-const char* mqtt_password = "Hb5Rj9qL";
-const char* mqtt_function_topic = "device/function";
+const char* ssid = env.wifi.ssid;
+const char* password = env.wifi.pass;
+const char* mqtt_server = env.mqtt.server;
+const char* mqtt_user = env.mqtt.user;
+const char* mqtt_password = env.mqtt.pass;
+const char* mqtt_function_topic = env.mqtt.topic;
 
 const int ledPin = 2;
 
@@ -17,7 +17,7 @@ PubSubClient client(espClient);
 void setup_wifi() {
   delay(10);
   Serial.println();
-  Serial.print("Conectando a ");
+  Serial.print("Connected to ");
   Serial.println(ssid);
 
   WiFi.begin(ssid, password);
@@ -27,9 +27,7 @@ void setup_wifi() {
     Serial.print(".");
   }
 
-  Serial.println("");
-  Serial.println("Conexión WiFi establecida");
-  Serial.println("Dirección IP obtenida: ");
+  Serial.println("");;
   Serial.println(WiFi.localIP());
 
   digitalWrite(ledPin, HIGH);
@@ -47,35 +45,30 @@ void setup_wifi() {
 }
 
 void callback(char* topic, byte* payload, unsigned int length) {
-  // Convierte el payload en una cadena de caracteres
   String message;
   for (int i = 0; i < length; i++) {
     message += (char)payload[i];
   }
 
-  // Verifica si el mensaje proviene del tema "led/control" y actúa en consecuencia
   if (String(topic) == mqtt_function_topic) {
     if (message == "ON") {
       digitalWrite(ledPin, HIGH);
       
-      client.publish("device/function/response", "Function ON executed");
+      client.publish(env.mqtt.responseTopic, "Function ON executed");
     } else if (message == "OFF") {
       digitalWrite(ledPin, LOW);
       
-      client.publish("device/function/response", "Function OFF executed");
+      client.publish(env.mqtt.responseTopic, "Function OFF executed");
     }
   }
 }
 
 void reconnect() {
   while (!client.connected()) {
-    Serial.println("Conectando al servidor MQTT...");
     if (client.connect("ESP8266Client", mqtt_user, mqtt_password)) {
-      Serial.println("Conexión exitosa");
-      client.subscribe(mqtt_function_topic); // Suscríbete al tema MQTT
-      client.publish("device/check", "Device conneted");
+      client.subscribe(mqtt_function_topic);
+      client.publish(env.mqtt.checkTopic, "Device conneted");
     } else {
-      Serial.print("Fallo en la conexión, código de retorno=");
       Serial.println(client.state());
       delay(5000);
     }
