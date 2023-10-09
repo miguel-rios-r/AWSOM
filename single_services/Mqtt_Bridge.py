@@ -3,10 +3,10 @@ import time
 
 mqtt_cli = mqtt.Client()
 
-broker_address = "34.41.169.80"
-port = 1883
-username = "awsom-user"
-password = "Hb5Rj9qL"
+broker_address = env.mqtt.server
+port = env.mqtt.port
+username = env.mqtt.user
+password = env.mqtt.pass
 
 led_status = False
 
