@@ -33,15 +33,14 @@ def on_connect(mqtt_cli, userdata, flags, rc):
 
 def on_message(mqtt_cli, userdata, msg):
 	print(f"'{msg.topic}': {msg.payload.decode()}")
-    if msg == "{status: INTENSE, range: 7}":
-        sendAlerts()
-        turnOffIOT()
+    # if msg == "{status: INTENSE, range: 7}":
+    #     sendAlerts()
+    #     turnOffIOT()
 
 def connect_to_data_analysis():
     print("Conneted to data analyst")
 
 mqtt_cli.on_connect = on_connect
-print("Conexión exitosa al servidor MQTT")
 
 mqtt_cli.connect(broker_address, port, 60)
 mqtt_cli.loop_start()
