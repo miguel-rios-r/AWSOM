@@ -1,11 +1,4 @@
 ### PROJECT AWSOM - A SPACE WEATHER AND SUN ORACLE
-
-Hi! I'm your first Markdown file in **StackEdit**. If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. Once you have finished with me, you can create new files by opening the **file explorer** on the left corner of the navigation bar.
-
-### HIGH-LEVEL SUMMARY
-Could we image the life without our Electrical and Electronics systems? So, what if a most powerful and natural force is able to destroy the life as we know now? We are talking about Space Weather and Geomagnetic storms, but, can we stop that ? We can be protected and just with magnetosphere, but not all. For that, our mission in AWSOM is to provide ways to preserve the infrastructure that supports our interconnected world, calculating from the raw data provided from DSCOVR to generated alerts. The data we use are magnetic camp and plasma solar . We use the correlation compare with attributes to find the relationship with the data and geomagnetic storms. Finally, we use that processed data for build real time alerts and automatized IOT actuators ables to turn off Electrical and Electronics systems.
-
-### HIGH-LEVEL SUMMARY
 Could we image the life without our Electrical and Electronics systems? So, what if a most powerful and natural force is able to destroy the life as we know now? We are talking about Space Weather and Geomagnetic storms, but, can we stop that ? We can be protected and just with magnetosphere, but not all. For that, our mission in AWSOM is to provide ways to preserve the infrastructure that supports our interconnected world, calculating from the raw data provided from DSCOVR to generated alerts. The data we use are magnetic camp and plasma solar . We use the correlation compare with attributes to find the relationship with the data and geomagnetic storms. Finally, we use that processed data for build real time alerts and automatized IOT actuators ables to turn off Electrical and Electronics systems.
 
 ### PROJECT DEMO
