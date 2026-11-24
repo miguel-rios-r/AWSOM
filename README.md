@@ -27,3 +27,5 @@ We use Tensor Flow and Google Colab for the data pre-analysis
 ### REFERENCES
 
 -   [https://www.swpc.noaa.gov/](https://www.swpc.noaa.gov/)
+
+tested at nov 09
